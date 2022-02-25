@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import HomeStack from "./screens/HomeStack";
 import SettingStack from "./screens/SettingStack";
+import OnboardingAndHome from "./screens/OnboardingAndHome";
 
 const Tab = createBottomTabNavigator();
 
@@ -12,7 +13,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="HomeStack" component={HomeStack} /> 
+        <Tab.Screen name="OnboardingAndHome" component={OnboardingAndHome} />
+        <Tab.Screen name="HomeStack" component={HomeStack} />
         <Tab.Screen name="SettingsStack" component={SettingStack} />
       </Tab.Navigator>
     </NavigationContainer>
